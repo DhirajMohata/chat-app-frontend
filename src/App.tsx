@@ -10,7 +10,6 @@ import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
     <Router>
-      <ToastContainer />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
