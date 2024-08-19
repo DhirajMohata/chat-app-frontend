@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/chat-app-frontend">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
