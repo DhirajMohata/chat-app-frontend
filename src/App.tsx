@@ -1,23 +1,13 @@
-import './App.css'
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Home from './components/Home';
-import Login from './components/Login';
-import Register from './components/Register';
-import Dashboard  from './components/Dashboard';
-import 'react-toastify/dist/ReactToastify.css';
+import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import Router from "./components/router";
 
-function App() {
+const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/chat" element={<Dashboard />} />
-        <Route path="*" element={<div>Not Found</div>} />
-      </Routes>
-    </Router>
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
   );
-}
+};
 
 export default App;
